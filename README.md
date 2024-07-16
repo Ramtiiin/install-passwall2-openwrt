@@ -5,7 +5,7 @@
 
 ### Configuring IP Address, WiFi, and Password
 
-Read more about [OpenWrt initial settings].
+Read more about [OpenWrt initial settings](https://github.com/Ramtiiin/Install-PassWall-OpenWrt/blob/main/Openwrt-initial-setting.md).
 
 ## 2. Install Passwall
 
