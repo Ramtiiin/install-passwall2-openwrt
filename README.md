@@ -1,4 +1,5 @@
 # OpenWRT Setup and Passwall Installation Guide
+[فارسی](https://github.com/Ramtiiin/iran-ip/blob/main/README.fa.md)
 
 ## 1. Initial Settings
 
