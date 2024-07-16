@@ -54,8 +54,6 @@
    opkg install dnsmasq-full
    opkg install kmod-nft-tproxy kmod-nft-socket
 
-Install Passwall
-
 6. Download and add the Passwall public key:
    ```sh
    wget -O passwall.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/passwall.pub
@@ -70,8 +68,6 @@ EOF
 for feed in passwall_packages passwall2; do
   echo "src/gz $feed https://master.dl.sourceforge.net/project/openwrt-passwall-build/releases/packages-$release/$arch/$feed" >> /etc/opkg/customfeeds.conf
 done
-
-Finalize Installation
 
 8. Update the package list again to include Passwall feeds:
    ```sh
