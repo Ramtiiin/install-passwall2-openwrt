@@ -30,7 +30,6 @@ Read more about [OpenWrt initial settings](https://github.com/Ramtiiin/Install-P
    
 5. Download and add the Passwall public key:
    ```sh
-   opkg install dnsmasq-full
    opkg install kmod-nft-tproxy kmod-nft-socket
 
 6. Download and add the Passwall public key:
