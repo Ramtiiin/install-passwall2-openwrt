@@ -19,13 +19,13 @@ Read more about [OpenWrt initial settings](https://github.com/Ramtiiin/Install-P
    ```sh
    opkg update
 
-3. Remove the default dnsmasq:
+3. Remove the default dnsmasq and install dnsmasq-full:
    ```sh
    opkg remove dnsmasq
-
-4. Install dnsmasq-full and required kernel modules:
-   ```sh
    opkg install dnsmasq-full
+
+4. Install required kernel modules:
+   ```sh
    opkg install kmod-nft-tproxy kmod-nft-socket
    
 5. Download and add the Passwall public key:
