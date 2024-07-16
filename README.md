@@ -30,14 +30,10 @@ Read more about [OpenWrt initial settings](https://github.com/Ramtiiin/Install-P
    
 5. Download and add the Passwall public key:
    ```sh
-   opkg install kmod-nft-tproxy kmod-nft-socket
-
-6. Download and add the Passwall public key:
-   ```sh
    wget -O passwall.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/passwall.pub
    opkg-key add passwall.pub
 
-7. Set up custom feeds for Passwall:
+6. Set up custom feeds for Passwall:
 ```sh
    read release arch << EOF
    $(. /etc/openwrt_release ; echo ${DISTRIB_RELEASE%.*} $DISTRIB_ARCH)
@@ -48,11 +44,11 @@ Read more about [OpenWrt initial settings](https://github.com/Ramtiiin/Install-P
    done
 ```
 
-8. Update the package list again to include Passwall feeds:
+7. Update the package list again to include Passwall feeds:
    ```sh
    opkg update
 
-9. Install luci-app-passwall2 and v2ray-geosite-ir:
+8. Install luci-app-passwall2 and v2ray-geosite-ir:
    ```sh
    opkg install luci-app-passwall2 v2ray-geosite-ir
    
