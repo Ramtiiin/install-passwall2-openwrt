@@ -1,7 +1,7 @@
 # OpenWRT Setup and Passwall Installation Guide
+[فارسی](https://github.com/Ramtiiin/iran-ip/blob/main/README.fa.md)
 
 ⚠️ This configuration has been tested on a Google WiFi Router running OpenWrt version OpenWrt 23.05.2 r23630-842932a63d stable. Ensure that your router has at least 128 MB of storage before executing these commands. ⚠️
-[فارسی](https://github.com/Ramtiiin/iran-ip/blob/main/README.fa.md)
 
 ## 1. Initial Settings
 
