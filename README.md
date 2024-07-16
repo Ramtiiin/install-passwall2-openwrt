@@ -60,14 +60,15 @@
    opkg-key add passwall.pub
 
 7. Set up custom feeds for Passwall:
-   ```sh
+```sh
    read release arch << EOF
-$(. /etc/openwrt_release ; echo ${DISTRIB_RELEASE%.*} $DISTRIB_ARCH)
-EOF
+   $(. /etc/openwrt_release ; echo ${DISTRIB_RELEASE%.*} $DISTRIB_ARCH)
+   EOF
 
-for feed in passwall_packages passwall2; do
-  echo "src/gz $feed https://master.dl.sourceforge.net/project/openwrt-passwall-build/releases/packages-$release/$arch/$feed" >> /etc/opkg/customfeeds.conf
-done
+   for feed in passwall_packages passwall2; do
+     echo "src/gz $feed https://master.dl.sourceforge.net/project/openwrt-passwall-build/releases/packages-$release/$arch/$feed" >> /etc/opkg/customfeeds.conf
+   done
+```
 
 8. Update the package list again to include Passwall feeds:
    ```sh
