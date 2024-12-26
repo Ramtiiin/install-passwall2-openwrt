@@ -29,7 +29,16 @@ Read more about [OpenWrt initial settings](https://github.com/Ramtiiin/Install-P
 4. Install required kernel modules:
    ```sh
    opkg install kmod-nft-tproxy kmod-nft-socket
-   
+
+5. Configuring DNS
+   ```sh
+   uci set network.wan.peerdns="0"
+   uci set network.wan6.peerdns="0"
+   uci set network.wan.dns='185.51.200.2'
+   uci commit network
+   uci commit
+   /sbin/reload_config
+
 5. Download and add the Passwall public key:
    ```sh
    wget -O passwall.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/passwall.pub
